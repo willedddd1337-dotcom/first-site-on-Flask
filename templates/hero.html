@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <h1>⚔️ {{ name }}</h1>
+
+    <div class="card">
+
+        <p>
+            Це сторінка героя <b>{{ name }}</b>.
+        </p>
+
+        <p>
+            Тут ти можеш додати:
+            характеристики, скіли, роль, білд і т.д.
+        </p>
+
+    </div>
+
+    <a href="/heroes" class="back">← Back</a>
+
+</div>
+
+</body>
+</html>
